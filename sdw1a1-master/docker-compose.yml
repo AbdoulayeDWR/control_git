@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  php_apache:
+    image: php:7.4-apache
+    container_name: controle_docker
+    volumes:
+      - ./php-project:/var/www/html
+    ports:
+      - "9000:80"
